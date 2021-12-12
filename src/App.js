@@ -15,7 +15,7 @@ function App() {
   const steps = [
     {
       selector: '.first-step',
-      content: `Laissez moi vous guider 😁`,
+      content: `Laissez moi vous guider 🤗`,
       style: {
         backgroundColor: theme === 't1' ? '#3a4764' : theme === 't2' ? 'white' : '#160628',
         color: theme === 't2' ? 'black' : 'white',
@@ -24,7 +24,7 @@ function App() {
     },
     {
       selector: '.theme-step',
-      content: 'Vous pouvez changer de thème juste ici',
+      content: 'Ici vous pouvez changer de thème 🎨',
       style: {
         backgroundColor: theme === 't1' ? '#3a4764' : theme === 't2' ? 'white' : '#160628',
         color: theme === 't2' ? 'black' : 'white',
@@ -33,7 +33,7 @@ function App() {
     },
     {
       selector: '.touches-step',
-      content: 'Un pavé numérique évidement',
+      content: 'Evidement, un pavé numérique 😝',
       style: {
         backgroundColor: theme === 't1' ? '#3a4764' : theme === 't2' ? 'white' : '#160628',
         color: theme === 't2' ? 'black' : 'white',
@@ -42,7 +42,7 @@ function App() {
     },
     {
       selector: '.calcul-step',
-      content: 'Mais vous pouvez aussi utiliser votre clavier',
+      content: 'Mais vous pouvez aussi utiliser votre clavier 😉',
       style: {
         backgroundColor: theme === 't1' ? '#3a4764' : theme === 't2' ? 'white' : '#160628',
         color: theme === 't2' ? 'black' : 'white',
@@ -60,7 +60,7 @@ function App() {
     },
     {
       selector: '.replay-step',
-      content: 'Vous pouvez revenir en arrière juste ici',
+      content: 'Vous pouvez revenir en arrière juste ici 🔙',
       style: {
         backgroundColor: theme === 't1' ? '#3a4764' : theme === 't2' ? 'white' : '#160628',
         color: theme === 't2' ? 'black' : 'white',
@@ -69,7 +69,7 @@ function App() {
     },
     {
       selector: '.info-step',
-      content: `Et pour réafficher ses infos, c'est juste ici!`,
+      content: `Et pour réafficher ces infos, c'est juste ici 😁`,
       style: {
         backgroundColor: theme === 't1' ? '#3a4764' : theme === 't2' ? 'white' : '#160628',
         color: theme === 't2' ? 'black' : 'white',

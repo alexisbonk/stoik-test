@@ -1,0 +1,24 @@
+history {
+    position: absolute;
+    width: 150px;
+    max-height: 450px;
+    overflow: scroll;
+    margin: 6%;
+    .content-wrapper {
+      font-size: 13px;
+      overflow: hidden;
+      word-break: break-all;
+      cursor: pointer;
+      margin-bottom: 5px;
+    }
+}
+
+/**
+* ? Mobile
+*/
+@media (max-width: 750px) {
+    history {
+      display: none;
+    }
+  }
+  

@@ -13,7 +13,7 @@ const Header = ({
       <div className="content-wrapper">
         <div className="in-header">
           <div style={{display: 'block'}}>
-            <h1>Stoïk</h1>
+            <h1>talent.io</h1>
             <Info 
               className="refresh-item info-step"
               onClick={() => setIsTourOpen(true)}

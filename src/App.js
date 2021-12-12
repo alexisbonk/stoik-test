@@ -15,7 +15,7 @@ function App() {
   const steps = [
     {
       selector: '.first-step',
-      content: `Laissez moi vous guider 🤗`,
+      content: `Laisse moi te guider.. `,
       style: {
         backgroundColor: theme === 't1' ? '#3a4764' : theme === 't2' ? 'white' : '#160628',
         color: theme === 't2' ? 'black' : 'white',
@@ -24,7 +24,7 @@ function App() {
     },
     {
       selector: '.theme-step',
-      content: 'Ici vous pouvez changer de thème 🎨',
+      content: 'Ici tu peux changer de thème 🎨',
       style: {
         backgroundColor: theme === 't1' ? '#3a4764' : theme === 't2' ? 'white' : '#160628',
         color: theme === 't2' ? 'black' : 'white',
@@ -42,7 +42,7 @@ function App() {
     },
     {
       selector: '.calcul-step',
-      content: 'Mais vous pouvez aussi utiliser votre clavier 😉',
+      content: 'Mais tu peux aussi utiliser ton clavier 😉',
       style: {
         backgroundColor: theme === 't1' ? '#3a4764' : theme === 't2' ? 'white' : '#160628',
         color: theme === 't2' ? 'black' : 'white',
@@ -51,7 +51,7 @@ function App() {
     },
     {
       selector: '.history-step',
-      content: `Ici sera affiché l'historique de vos dernières opérations`,
+      content: `Ici sera affiché l'historique de tes dernières opérations`,
       style: {
         backgroundColor: theme === 't1' ? '#3a4764' : theme === 't2' ? 'white' : '#160628',
         color: theme === 't2' ? 'black' : 'white',
@@ -60,7 +60,7 @@ function App() {
     },
     {
       selector: '.replay-step',
-      content: 'Vous pouvez revenir en arrière juste ici 🔙',
+      content: 'Tu pourras revenir en arrière juste ici 🔙',
       style: {
         backgroundColor: theme === 't1' ? '#3a4764' : theme === 't2' ? 'white' : '#160628',
         color: theme === 't2' ? 'black' : 'white',
@@ -70,6 +70,15 @@ function App() {
     {
       selector: '.info-step',
       content: `Et pour réafficher ces infos, c'est juste ici 😁`,
+      style: {
+        backgroundColor: theme === 't1' ? '#3a4764' : theme === 't2' ? 'white' : '#160628',
+        color: theme === 't2' ? 'black' : 'white',
+        fontSize: '17pt'
+      },
+    },
+    {
+      selector: '.final-step',
+      content: `Bon tests 🤗`,
       style: {
         backgroundColor: theme === 't1' ? '#3a4764' : theme === 't2' ? 'white' : '#160628',
         color: theme === 't2' ? 'black' : 'white',
@@ -99,7 +108,12 @@ function App() {
   }
 
   return (
-    <div className="">
+    <>
+      <Tour
+        steps={steps}
+        isOpen={isTourOpen}
+        onRequestClose={() => setIsTourOpen(false)} 
+      />
       <Header 
         theme={theme} 
         handleChangeTheme={handleChangeTheme} 
@@ -121,12 +135,7 @@ function App() {
         setPreviousFormState={setPreviousFormState}
         setSaveForms={setSaveForms}
       />
-      <Tour
-        steps={steps}
-        isOpen={isTourOpen}
-        onRequestClose={() => setIsTourOpen(false)} 
-      />
-    </div>
+    </>
   );
 }
 

@@ -1,4 +1,4 @@
-# Stoik | Calculator test
+# talent.io | Calculator test
 Test technique réalisé par Alexis Knob
 
 

@@ -43,8 +43,6 @@ const Calculator = ({
   const handleSubmit = (e) => {
     let result;
 
-    console.log(formState)
-    console.log(regex.includes(formState))
     if (e) {
       e.preventDefault();
     }
